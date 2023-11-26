@@ -16,12 +16,8 @@ def writeToFile(s, name):
     f1.close()
 if __name__ == '__main__':
     for i in range(len(title_list)):
-        v_id = title_list[i]
-        ### solution = getTranscriptStr(v_id)
         model = whisper.load_model("base")
         filepath = "./mp3/"
         filepath += title_list[i] + str(".mp3")
         result = model.transcribe(filepath)
-        ##print(type(result["text"]))
-        ##print(result["text"])
         writeToFile(result["text"], title_list[i])
