@@ -26,7 +26,7 @@ title_list =[
 "joe-biden", "rich-paul",
 "geoffrey-hinton", "mark-millie",
 "merrick-garland", "deion-sanders",
-"volodymyr zelenskyy", "denzel-washington"
+"volodymyr-zelenskyy", "denzel-washington"
 ]
 
 def getTranscriptStr(video_id):
